@@ -1,0 +1,6 @@
+[submodule "lgbtasm"]
+	path = lgbtasm
+	url = git@github.com:jangler/lgbtasm.git
+[submodule "lua-struct"]
+	path = lua-struct
+	url = https://github.com/iryont/lua-struct
