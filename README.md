@@ -1,5 +1,7 @@
 generates patches for game boy (color) games.
 
+the finished products are already available in the `ips/` folder.
+
 building requires git (sort of), lua, and make. the makefile uses luajit by
 default; if you want to use puc-rio lua or another implementation, you will
 need to edit the makefile accordingly.
