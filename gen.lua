@@ -22,7 +22,6 @@ local function writeips(filename, records)
     for _, record in ipairs(records) do
         -- address field is three bytes and not four, weirdly
         local data = lgbtasm.compile(table.concat(record.lines, '\n'))
-        print(string.format('%x', record.address))
         file:write(string.sub(struct.pack('>I', record.address), 2))
         file:write(struct.pack('>H', #data))
         file:write(data)
