@@ -113,7 +113,7 @@ local function loadasmfile(blocks, path)
     local working_block = nil
 
     for line in io.lines(path) do
-        local ml = string.match(line, '^(.+):$')
+        local ml = string.match(line, '^([^#]+):$')
 
         if ml then
             -- address of new block found
