@@ -83,7 +83,7 @@ local function makedefs(blocks, banks)
     -- make placeholders defs for labels
     for _, block in ipairs(blocks) do
         if block.label ~= '' then
-            defs[block.label] = 0
+            defs[block.label] = block.addr
         end
         if block.addr == 0 then
             table.insert(floating, block)
