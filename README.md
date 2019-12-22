@@ -10,7 +10,10 @@ need to edit the makefile accordingly.
 git clone https://github.com/jangler/lgbtasm.git
 git submodule init
 git submodule update
-make 
+```
+
+```
+usage: lua gen.lua <outfile> <bankfile> <asmfile>...
 ```
 
 you can add more patches by adding new files in the `asm/` folder, using the
